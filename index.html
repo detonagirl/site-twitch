@@ -2,13 +2,63 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Mariana de Carvalho Trindade">
     <meta property="og:description" content="Tudo que voce precisa saber sobre a criadora por trás do canal da twitch MariPHP">
-    <meta property="">
+    <meta property="og:title" content="Conheça a Mariana">
     <title>Conheça a Mariana</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-    
+    <header>
+        <h1>Mariana</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Ajude</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <article class="row">
+            <div id="twitch-embed" class="col-sm-12 col-md-12 col-lg-8"></div>
+            <div class="col-lg-4 col-sm-12 col-md-12"><h2>Quem sou eu</h2></div>
+        </article>
+        <section id="blog">
+            <h2>Blog</h2>
+        </section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+        </section>
+    </main>
+    <footer>
+        <p>Quem não sabe copia mesmo né?</p>
+    </footer>
+
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "mariphp",
+      });
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </body>
 </html>
